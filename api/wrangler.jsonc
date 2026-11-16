@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "avila-kids-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-16",
+  "workers_dev": true,
+  "vars": {
+    "CORS_ORIGINS": "http://localhost:3000,http://localhost:5173"
+  },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "avila-kids-api",
+    "database_id": "fb4e65e1-076c-48b0-99c3-b04ffa8cf492",
+    "migrations_dir": "migrations"
+  }]
+}
